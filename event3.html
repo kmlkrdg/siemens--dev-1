@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+       
         .inlineDiv {
             display: inline-flex;
         }
@@ -219,7 +220,7 @@ productList.forEach(newProduct => {
     <td>${newProduct.name}</td>
     <td>${newProduct.price}</td>
     <td>${newProduct.color}</td>
-    <td>${newProduct.isPublish ? '✓' : '❌'}</td>
+    <td class="text-center">${newProduct.isPublish ? '<i class="fa-solid fa-check-double"></i>' : '<i class="fa-solid fa-xmark"></i>'}</td>
     <td>${newProduct.publishDay}</td>
     <td><button id="btnUpdate" onclick="btnLoadToForm(${newProduct.id})" type="button" class="btn btn-success">güncelle</button></td>
     <td><button id="btnUpdate" onclick="deleted(${newProduct.id})" type="button" class="btn btn-danger">sil</button></td>
